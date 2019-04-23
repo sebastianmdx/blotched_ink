@@ -1,0 +1,85 @@
+@import "config";
+@import "utilities";
+
+// general styles
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.6;
+  background: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: $dark-color;
+}
+
+ul {
+  list-style: none;
+}
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+
+img {
+  width: 100%;
+}
+// main nav
+#main-nav {
+  padding-top: 0.5rem;
+  grid-row: 3/3;
+
+  ul {
+    display: flex;
+    justify-content: center;
+
+    li {
+      padding: 1rem 1.5rem;
+    }
+    a {
+      text-decoration: none;
+      color: $dark-color;
+      text-transform: uppercase;
+      border-bottom: 3px transparent solid;
+      padding-bottom: 0.5rem;
+      transition: border-color 0.5s;
+
+      &:hover {
+        border-color: $medium-color;
+      }
+
+      &.current {
+        border-color: $main-color;
+      }
+    }
+  }
+}
+
+// header
+#header-home {
+  background: $bg-image no-repeat center right / cover;
+  height: 80vh;
+  color: black;
+
+  //  header content
+
+  .header-content {
+    text-align: center;
+    padding-top: 20%;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+
+    p {
+      margin-top: 1.5rem;
+      line-height: 1.2;
+      grid-row: 2/3;
+    }
+  }
+}
