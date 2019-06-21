@@ -12,36 +12,141 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css?family=Lato"
+      href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap"
       rel="stylesheet"
     />
     <title>Blotched Ink Pictures| Showreel Company</title>
   </head>
   <body>
+      <nav id="main-nav">
+      <ul>
+        <li><a href="index.html" class="current"">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="showreels.html">Showreels</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="contact.html">Conctact</a></li>
+      </ul>
+    </nav>
     <header id="header-home">
-      <div class="container">
         <div class="header-content">
-          <p class="lead">
-            Blotched Ink Pictures is a showreel company dedicated to
-            <span
-              class="txt-type"
-              data-wait="3000"
-              data-words='["Ruri","Caio","Jack","Rosie"]'
-            ></span>
-          </p>
-          <nav id="main-nav">
-            <ul>
-              <li><a href="index.html" class="current">Home</a></li>
-              <li><a href="showreels.html">Showreels</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Social Media</a></li>
-              <li><a href="contact.html">Special Projects</a></li>
-              <li><a href="contact.html">Process</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
     </header>
-    <script src="js/typewriter.js"></script>
+    <div class="social text-center">
+        <a href="https://www.facebook.com/BlotchedInk/" target="_blank"
+          ><i class="fab fa-facebook fa-2x"></i
+        ></a>
+        <a href="https://twitter.com/BlotchedInk" target="_blank"
+          ><i class="fab fa-twitter fa-2x"></i
+        ></a>
+        <a href="https://www.instagram.com/blotchedink/" target="_blank"
+          ><i class="fab fa-instagram fa-2x"></i
+        ></a>
+        <a
+          href="https://www.youtube.com/channel/UCQlBv_ZqnA8gJUzpIZoi0eA"
+          target="_blank"
+          ><i class="fab fa-youtube fa-2x"></i
+        ></a>
+      </div>
+      <div class="text-center">
+          <a href="#home-a"><i class="fas fa-caret-down fa-2x"></i></a>
+        </div>
+            <!-- section a : about-->
+      <section id="home-a" class="text-center">
+        <div class="container">
+            <h2 class="section-title">Filmography</h2>
+            <div class="bottom-line my-2"></div>
+            <div class="filmography">
+              <div><a href="https://www.imdb.com/title/tt10361602/?ref_=nm_ov_bio_lk2" target="_blank"><img src="img/films/film1.jpg" alt=""></a></div>
+              <div><a href="https://www.imdb.com/title/tt10262824/?ref_=nm_ov_bio_lk1" target="_blank"><img src="img/films/film2.jpg" alt=""></a></div>
+              <div><a href="https://www.imdb.com/title/tt4551300/" target="_blank"><img src="img/films/film3.jpg" alt=""></a></div>
+            </div>
+        </div>
+      </section>
+
+      <!-- section b: clients -->
+      <section id="home-b" class="text-center">
+        <div class="container">
+            <h2 class="section-title">Clients</h2>
+            <div class="bottom-line"></div>
+            <div class="clients">
+                <div><img src="img/logos/logo1.jpg" alt=""></div>
+                <div><img src="img/logos/logo2.jpg" alt=""></div>
+                <div><img src="img/logos/logo3.jpg" alt=""></div>
+              </div>
+        </div>
+      </section>
+
+      <!-- section c: contact form -->
+    <section class="contact-a text-center py-3">
+        <div class="container">
+          <h2 class="section-title">Contact Us</h2>
+          <div class="bottom-line"></div>
+          <p class="lead">Here is how you can reach Blotched Inc</p>
+          <form
+            name="contact-portfolio-site"
+            method="POST"
+            data-netlify="true"
+            data-netlify-recaptcha="true"
+          >
+            <div class="text-fields">
+              <input
+                type="text"
+                class="text-input name-input"
+                placeholder=" Name"
+                name="name"
+              />
+              <input
+                type="text"
+                class="text-input subject-input"
+                placeholder=" Subject"
+                name="subject"
+              />
+              <input
+                type="email"
+                class="text-input email-input"
+                placeholder=" Email Adress"
+                name="email"
+              />
+              <input
+                type="text"
+                class="text-input phone-input"
+                placeholder=" Phone Number"
+                name="phone"
+              />
+              <textarea
+                class="text-input message-input"
+                placeholder=" Enter Message"
+                name="message"
+              ></textarea>
+              <div class="my-2">
+                <div data-netlify-recaptcha="true"></div>
+              </div>
+            </div>
+            <button type="submit" class="btn-dark">Submit</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- footer -->
+    <footer id="main-footer">
+        <div class="footer-content container">
+          <p>Copyright &copy; 2019 | All Rights Reserved</p>
+          <div class="social">
+              <a href="https://www.facebook.com/BlotchedInk/" target="_blank"
+                ><i class="fab fa-facebook fa-2x"></i
+              ></a>
+              <a href="https://twitter.com/BlotchedInk" target="_blank"
+                ><i class="fab fa-twitter fa-2x"></i
+              ></a>
+              <a href="https://www.instagram.com/blotchedink/" target="_blank"
+                ><i class="fab fa-instagram fa-2x"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/channel/UCQlBv_ZqnA8gJUzpIZoi0eA"
+                target="_blank"
+                ><i class="fab fa-youtube fa-2x"></i
+              ></a>
+            </div>
+        </div>
+      </footer>
   </body>
 </html>
