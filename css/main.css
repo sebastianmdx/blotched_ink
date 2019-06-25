@@ -327,4 +327,8 @@ i.fa-caret-down {
   .mobile-menu {
     visibility: hidden; }
     .mobile-menu.show {
-      visibility: visible; } }
+      visibility: visible; }
+  #home-a .filmography {
+    grid-template-columns: 1fr; }
+  .contact-a .text-fields {
+    grid-template-areas: "name" "subject" "email" "phone" "message"; } }
