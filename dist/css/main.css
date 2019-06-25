@@ -289,17 +289,18 @@ i.fa-caret-down {
 
 @media (max-width: 500px) {
   #main-nav {
-    text-align: center; }
+    text-align: center;
+    background: #fff;
+    opacity: 0.9; }
     #main-nav ul {
       display: grid;
       grid-template-columns: 1fr; }
       #main-nav ul li {
         padding: 1rem; }
   #header-home {
-    display: none; }
-    #header-home .header-content {
-      display: none; }
-  .social,
+    position: relative;
+    top: -15rem;
+    z-index: -1; }
   .arrow-down {
     display: none; }
   .menu-btn {
@@ -326,4 +327,8 @@ i.fa-caret-down {
   .mobile-menu {
     visibility: hidden; }
     .mobile-menu.show {
-      visibility: visible; } }
+      visibility: visible; }
+  #home-a .filmography {
+    grid-template-columns: 1fr; }
+  .contact-a .text-fields {
+    grid-template-areas: "name" "subject" "email" "phone" "message"; } }

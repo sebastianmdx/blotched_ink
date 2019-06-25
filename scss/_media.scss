@@ -13,6 +13,8 @@
 @media (max-width: 500px) {
   #main-nav {
     text-align: center;
+    background: #fff;
+    opacity: 0.9;
 
     ul {
       display: grid;
@@ -25,14 +27,12 @@
 
   #header {
     &-home {
-      display: none;
-      .header-content {
-        display: none;
-      }
+      position: relative;
+      top: -15rem;
+      z-index: -1;
     }
   }
 
-  .social,
   .arrow-down {
     display: none;
   }
@@ -74,12 +74,30 @@
       }
     }
   }
+
   // mobile menu
   .mobile-menu {
     visibility: hidden;
 
     &.show {
       visibility: visible;
+    }
+  }
+
+  // Filmography
+  #home-a .filmography {
+    grid-template-columns: 1fr;
+  }
+
+  // Contact
+  .contact-a {
+    .text-fields {
+      grid-template-areas:
+        "name"
+        "subject"
+        "email"
+        "phone"
+        "message";
     }
   }
 }
