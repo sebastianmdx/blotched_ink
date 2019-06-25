@@ -330,5 +330,7 @@ i.fa-caret-down {
       visibility: visible; }
   #home-a .filmography {
     grid-template-columns: 1fr; }
+  #home-b .clients {
+    grid-template-columns: 1fr; }
   .contact-a .text-fields {
     grid-template-areas: "name" "subject" "email" "phone" "message"; } }
