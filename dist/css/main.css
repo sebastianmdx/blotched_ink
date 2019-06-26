@@ -1,6 +1,6 @@
 .container {
   max-width: 1280px;
-  padding: 1.5rem;
+  padding: 2rem;
   margin: auto;
   overflow: hidden; }
 
@@ -155,6 +155,32 @@ i.fa-caret-down {
   i.fa-caret-down:hover {
     color: #ffbc00; }
 
+#home-video {
+  text-align: center;
+  background: #f4f4f4; }
+  #home-video .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+    #home-video .grid-container .promo-video-outer {
+      display: inline-block;
+      width: 100%; }
+      #home-video .grid-container .promo-video-outer div {
+        margin: 1.5rem; }
+      #home-video .grid-container .promo-video-outer .promo-video-inner {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden; }
+      #home-video .grid-container .promo-video-outer iframe,
+      #home-video .grid-container .promo-video-outer object,
+      #home-video .grid-container .promo-video-outer embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+
 #home-a {
   padding-bottom: 2rem;
   margin-top: 2rem;
@@ -165,7 +191,6 @@ i.fa-caret-down {
     grid-gap: 4rem;
     padding: 0 2rem; }
     #home-a .filmography div {
-      height: 500px;
       transition: transform 0.2s; }
       #home-a .filmography div:hover {
         transform: scale(1.1); }
@@ -208,7 +233,6 @@ i.fa-caret-down {
       font-family: "Special Elite", sans-serif;
       font-size: 1.1rem; }
   .contact-a button[type="submit"] {
-    width: 30%;
     font-family: "Special Elite", sans-serif;
     font-size: 1.1rem; }
 
@@ -270,8 +294,7 @@ i.fa-caret-down {
 
 #main-footer {
   background: #333;
-  color: #fff;
-  height: 8em; }
+  color: #fff; }
   #main-footer .footer-content {
     display: flex;
     justify-content: space-around;
@@ -328,7 +351,13 @@ i.fa-caret-down {
     visibility: hidden; }
     .mobile-menu.show {
       visibility: visible; }
+  #home-video .grid-container {
+    grid-template-columns: 1fr; }
   #home-a .filmography {
     grid-template-columns: 1fr; }
+  #home-b .clients {
+    grid-template-columns: 1fr;
+    width: 50%;
+    margin: auto; }
   .contact-a .text-fields {
     grid-template-areas: "name" "subject" "email" "phone" "message"; } }

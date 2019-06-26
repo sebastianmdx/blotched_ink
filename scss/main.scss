@@ -109,9 +109,45 @@ i.fa-caret-down {
   }
 }
 
+// Home Section: Promotional Video
+#home-video {
+  text-align: center;
+  background: $light-color;
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    .promo-video-outer {
+      display: inline-block;
+      width: 100%;
+
+      div {
+        margin: 1.5rem;
+      }
+
+      .promo-video-inner {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+      }
+      iframe,
+      object,
+      embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
 // home section a filmography
 #home-a {
-  // background: $light-color;
   padding-bottom: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -123,7 +159,6 @@ i.fa-caret-down {
     padding: 0 2rem;
 
     div {
-      height: 500px;
       transition: transform 0.2s;
 
       &:hover {
@@ -192,7 +227,6 @@ i.fa-caret-down {
       }
     }
     button[type="submit"] {
-      width: 30%;
       font-family: "Special Elite", sans-serif;
       font-size: 1.1rem;
     }
@@ -294,7 +328,6 @@ i.fa-caret-down {
 #main-footer {
   background: $dark-color;
   color: #fff;
-  height: 8em;
 
   .footer-content {
     display: flex;

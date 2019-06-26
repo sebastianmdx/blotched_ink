@@ -82,9 +82,25 @@
     }
   }
 
+  // Promo Video
+  #home-video {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
   // Filmography
   #home-a .filmography {
     grid-template-columns: 1fr;
+  }
+
+  // Clients
+  #home-b {
+    .clients {
+      grid-template-columns: 1fr;
+      width: 50%;
+      margin: auto;
+    }
   }
 
   // Contact
