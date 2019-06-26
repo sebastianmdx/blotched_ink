@@ -256,7 +256,8 @@ i.fa-caret-down {
     #show-a .banner img {
       width: 100%; }
   #show-a p {
-    padding: 0 20rem; }
+    width: 50%;
+    margin: auto; }
 
 #show-b .packages {
   display: grid;
@@ -372,5 +373,19 @@ i.fa-caret-down {
     grid-template-columns: 1fr;
     width: 50%;
     margin: auto; }
+  #about-a {
+    border-top: solid 2px #ccc; }
+    #about-a .about-info {
+      grid-template-columns: 1fr; }
+  #show-a .banner {
+    padding: 0; }
+  #show-a p {
+    width: 80%;
+    margin: auto; }
+  #show-b .packages {
+    grid-template-columns: 1fr; }
+  #show-c .extras {
+    grid-template-columns: 1fr;
+    padding: 0; }
   .contact-a .text-fields {
     grid-template-areas: "name" "subject" "email" "phone" "message"; } }

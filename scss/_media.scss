@@ -112,6 +112,40 @@
     }
   }
 
+  // About Page
+  #about-a {
+    border-top: solid 2px $medium-color;
+
+    .about-info {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // Showreels page
+  #show-a {
+    .banner {
+      padding: 0;
+    }
+
+    p {
+      width: 80%;
+      margin: auto;
+    }
+  }
+
+  #show-b {
+    .packages {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  #show-c {
+    .extras {
+      grid-template-columns: 1fr;
+      padding: 0;
+    }
+  }
+
   // Contact
   .contact-a {
     .text-fields {
