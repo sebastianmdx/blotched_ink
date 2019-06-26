@@ -18,7 +18,12 @@
     <title>Showreels | Blotched Ink Pictures</title>
   </head>
   <body>
-    <nav id="main-nav">
+    <div class="menu-btn">
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+      <div class="btn-line"></div>
+    </div>
+    <nav id="main-nav" class="mobile-menu">
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
@@ -27,9 +32,7 @@
         <li><a href="contact.html">Conctact</a></li>
       </ul>
     </nav>
-    <header id="header-home">
-      <div class="header-content"></div>
-    </header>
+    <header id="header-home"></header>
     <div class="social text-center">
       <a href="https://www.facebook.com/BlotchedInk/" target="_blank"
         ><i class="fab fa-facebook fa-2x"></i
@@ -46,8 +49,8 @@
         ><i class="fab fa-youtube fa-2x"></i
       ></a>
     </div>
-    <div class="text-center">
-      <a href="#show-a"><i class="fas fa-caret-down fa-2x"></i></a>
+    <div class="text-center arrow-down">
+      <a href="#home-video"><i class="fas fa-caret-down fa-2x"></i></a>
     </div>
 
     <!-- section b: showreels banner -->
@@ -58,11 +61,13 @@
         <div class="banner">
           <img src="img/showreels/banner1.jpg" alt="" />
         </div>
-        <p class="lead text-center">
-          Blotched Ink we believe making you mark doesn't have to cost the
-          earth. So we have marked the difference by introducing packages that
-          are tailored for you.
-        </p>
+        <div class="text-center">
+          <p class="lead">
+            Blotched Ink we believe making you mark doesn't have to cost the
+            earth. So we have marked the difference by introducing packages that
+            are tailored for you.
+          </p>
+        </div>
       </div>
     </section>
 
@@ -172,5 +177,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>
