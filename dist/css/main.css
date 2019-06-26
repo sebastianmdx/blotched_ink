@@ -319,6 +319,7 @@ i.fa-caret-down {
       #main-nav ul li {
         padding: 1rem; }
   #header-home {
+    margin-top: -4rem;
     position: relative;
     top: -15rem;
     z-index: -1;
