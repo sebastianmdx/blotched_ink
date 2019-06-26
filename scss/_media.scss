@@ -85,8 +85,16 @@
 
   // Promo Video
   #home-video {
-    .grid-container {
-      grid-template-columns: 1fr;
+    .container {
+      padding: 0;
+
+      .section-title {
+        margin-top: 4rem;
+      }
+
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
     }
   }
 

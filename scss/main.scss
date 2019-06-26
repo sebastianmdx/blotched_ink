@@ -103,9 +103,10 @@ img {
 
 i.fa-caret-down {
   padding-bottom: 2rem;
+  color: #000;
 
   &:hover {
-    color: $main-color;
+    color: $medium-color;
   }
 }
 
@@ -331,11 +332,22 @@ i.fa-caret-down {
 
   .footer-content {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    // justify-content: space-around;
     padding-top: 3rem;
+
+    a {
+      color: $light-color;
+
+      &:hover {
+        color: $main-color;
+      }
+    }
 
     .social .fab {
       color: #fff;
+      padding-top: 2rem;
 
       &:hover {
         color: $main-color;
