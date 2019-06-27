@@ -99,16 +99,29 @@
   }
 
   // Filmography
-  #home-a .filmography {
-    grid-template-columns: 1fr;
+  #home-a {
+    margin-bottom: -1rem;
+
+    .bottom-line {
+      margin-bottom: -1.5rem;
+    }
+
+    .filmography {
+      grid-template-columns: 1fr;
+      grid-gap: 2rem;
+      padding: 3rem;
+      margin-bottom: -1rem;
+    }
   }
 
   // Clients
   #home-b {
     .clients {
       grid-template-columns: 1fr;
+      grid-gap: 1rem;
       width: 50%;
       margin: auto;
+      padding: 3rem;
     }
   }
 

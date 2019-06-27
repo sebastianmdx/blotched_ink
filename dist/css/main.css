@@ -367,12 +367,21 @@ i.fa-caret-down {
       margin-top: 4rem; }
     #home-video .container .grid-container {
       grid-template-columns: 1fr; }
-  #home-a .filmography {
-    grid-template-columns: 1fr; }
+  #home-a {
+    margin-bottom: -1rem; }
+    #home-a .bottom-line {
+      margin-bottom: -1.5rem; }
+    #home-a .filmography {
+      grid-template-columns: 1fr;
+      grid-gap: 2rem;
+      padding: 3rem;
+      margin-bottom: -1rem; }
   #home-b .clients {
     grid-template-columns: 1fr;
+    grid-gap: 1rem;
     width: 50%;
-    margin: auto; }
+    margin: auto;
+    padding: 3rem; }
   #about-a .about-info {
     grid-template-columns: 1fr; }
   #show-a .banner {
