@@ -333,7 +333,7 @@ i.fa-caret-down {
     top: -15rem;
     z-index: -1;
     height: 19rem;
-    margin-bottom: -10rem; }
+    margin-bottom: -15rem; }
   .arrow-down {
     display: none; }
   .menu-btn {
@@ -373,10 +373,8 @@ i.fa-caret-down {
     grid-template-columns: 1fr;
     width: 50%;
     margin: auto; }
-  #about-a {
-    border-top: solid 2px #ccc; }
-    #about-a .about-info {
-      grid-template-columns: 1fr; }
+  #about-a .about-info {
+    grid-template-columns: 1fr; }
   #show-a .banner {
     padding: 0; }
   #show-a p {
@@ -387,5 +385,17 @@ i.fa-caret-down {
   #show-c .extras {
     grid-template-columns: 1fr;
     padding: 0; }
+  #process-a .banner {
+    padding: 0; }
+  #process-a .extra-space {
+    display: none; }
+  #process-a .process-items {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 0; }
+    #process-a .process-items p {
+      font-size: 1.2rem; }
+    #process-a .process-items img {
+      display: none; }
   .contact-a .text-fields {
     grid-template-areas: "name" "subject" "email" "phone" "message"; } }
