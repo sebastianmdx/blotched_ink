@@ -114,8 +114,6 @@
 
   // About Page
   #about-a {
-    border-top: solid 2px $medium-color;
-
     .about-info {
       grid-template-columns: 1fr;
     }
@@ -143,6 +141,31 @@
     .extras {
       grid-template-columns: 1fr;
       padding: 0;
+    }
+  }
+
+  // Process Page
+  #process-a {
+    .banner {
+      padding: 0;
+    }
+
+    .extra-space {
+      display: none;
+    }
+
+    .process-items {
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+      padding: 0;
+
+      p {
+        font-size: 1.2rem;
+      }
+
+      img {
+        display: none;
+      }
     }
   }
 
