@@ -358,9 +358,12 @@ i.fa-caret-down {
       .menu-btn.close .btn-line:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px); }
   .mobile-menu {
-    visibility: hidden; }
+    visibility: hidden;
+    transform: translate3d(0, -100%, 0);
+    transition: all 0.5s ease-out; }
     .mobile-menu.show {
-      visibility: visible; }
+      visibility: visible;
+      transform: translate3d(0, 0, 0); }
   #home-video .container {
     padding: 0; }
     #home-video .container .section-title {
