@@ -319,8 +319,10 @@ i.fa-caret-down {
     background: #f4f4f4; }
   #show-c .extras {
     grid-template-columns: 1fr; }
+  #about-a .container {
+    padding: 0; }
   #about-a .about-info {
-    grid-template-columns: 1fr; } }
+    grid-gap: 0; } }
 
 @media (max-width: 800px) {
   #header-home {

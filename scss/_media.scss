@@ -13,8 +13,11 @@
     }
   }
   #about-a {
+    .container {
+      padding: 0;
+    }
     .about-info {
-      grid-template-columns: 1fr;
+      grid-gap: 0;
     }
   }
 }
