@@ -1,5 +1,11 @@
 // Landscape
 @media (max-height: 500px) and (max-width: 670px) {
+  #home-video {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
   #process-a {
     .process-items {
       grid-template-columns: 1fr;
