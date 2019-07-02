@@ -22,6 +22,18 @@
     }
   }
 
+  #show-a {
+    .banner {
+      padding: 0 2rem;
+    }
+  }
+
+  #show-b {
+    .packages {
+      padding: 0 2rem;
+    }
+  }
+
   #show-c {
     .extras {
       grid-template-columns: 1fr;

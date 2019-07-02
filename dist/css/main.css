@@ -324,6 +324,10 @@ i.fa-caret-down {
       grid-template-columns: 1fr; }
       #process-a .process-items .item {
         display: none; }
+  #show-a .banner {
+    padding: 0 2rem; }
+  #show-b .packages {
+    padding: 0 2rem; }
   #show-c .extras {
     grid-template-columns: 1fr; }
   #about-a .container {
