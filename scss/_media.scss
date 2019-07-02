@@ -1,9 +1,20 @@
 // Landscape
-@media (max-height: 500px) {
+@media (max-height: 500px) and (max-width: 670px) {
   #process-a {
     .process-items {
       grid-template-columns: 1fr;
       background: $light-color;
+    }
+  }
+
+  #show-c {
+    .extras {
+      grid-template-columns: 1fr;
+    }
+  }
+  #about-a {
+    .about-info {
+      grid-template-columns: 1fr;
     }
   }
 }
