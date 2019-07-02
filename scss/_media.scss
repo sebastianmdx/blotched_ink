@@ -7,9 +7,18 @@
   }
 
   #process-a {
+    background: $light-color;
+
+    .banner {
+      display: none;
+    }
+
     .process-items {
       grid-template-columns: 1fr;
-      background: $light-color;
+
+      .item {
+        display: none;
+      }
     }
   }
 
