@@ -426,7 +426,7 @@ i.fa-caret-down {
     grid-template-columns: 1fr;
     padding: 0; }
   #process-a .banner {
-    padding: 0; }
+    display: none; }
   #process-a .process-items {
     display: grid;
     grid-template-areas: "one" "two" "four" "three" "five" "six";
