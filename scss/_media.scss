@@ -7,18 +7,18 @@
   }
 
   #process-a {
-    background: $light-color;
-
     .banner {
       display: none;
     }
 
     .process-items {
-      grid-template-columns: 1fr;
-
-      .item {
-        display: none;
-      }
+      grid-template-areas:
+        "one"
+        "two"
+        "four"
+        "three"
+        "five"
+        "six";
     }
   }
 
@@ -218,12 +218,16 @@
       padding: 0;
     }
 
-    .extra-space {
-      display: none;
-    }
-
     .process-items {
-      grid-template-columns: 1fr;
+      display: grid;
+      grid-template-areas:
+        "one"
+        "two"
+        "four"
+        "three"
+        "five"
+        "six";
+
       grid-gap: 1rem;
       padding: 0;
 
@@ -231,9 +235,9 @@
         font-size: 1.2rem;
       }
 
-      img {
-        display: none;
-      }
+      // img {
+      //   display: none;
+      // }
     }
   }
 

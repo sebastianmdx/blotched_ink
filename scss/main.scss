@@ -193,10 +193,6 @@ i.fa-caret-down {
       grid-gap: 1.2rem;
       margin-bottom: 1.2rem;
 
-      ::placeholder {
-        color: $dark-color;
-        font-family: "Special Elite", sans-serif;
-      }
       // grid areas
       .name-input {
         grid-area: name;
@@ -225,6 +221,10 @@ i.fa-caret-down {
         border: solid 2px $main-color;
         font-family: "Special Elite", sans-serif;
         font-size: 1.1rem;
+      }
+      ::placeholder {
+        color: $dark-color;
+        font-family: "Special Elite", sans-serif;
       }
     }
     button[type="submit"] {
@@ -285,7 +285,7 @@ i.fa-caret-down {
   }
 }
 
-//showreel section c: extras
+//Showreel Section C: Extras
 #show-c {
   background: $light-color;
 
@@ -313,17 +313,47 @@ i.fa-caret-down {
       width: 100%;
     }
   }
+
   .process-items {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 3rem;
-    padding: 2rem 4rem;
+    grid-gap: 2rem;
+    padding: 0 4rem;
+    grid-template-areas:
+      "one two"
+      "three four"
+      "five six";
+  }
 
-    h1 {
-      padding-bottom: 1rem;
-    }
+  .process-item-1 {
+    grid-area: one;
+  }
+  .process-item-2 {
+    grid-area: two;
+  }
+  .process-item-3 {
+    grid-area: three;
+  }
+  .process-item-4 {
+    grid-area: four;
+  }
+  .process-item-5 {
+    grid-area: five;
+  }
+  .process-item-6 {
+    grid-area: six;
   }
 }
+
+// .process-items {
+//   display: grid;
+//   grid-template-columns: repeat(2, 1fr);
+//   grid-gap: 3rem;
+//   padding: 2rem 4rem;
+
+//   h1 {
+//     padding-bottom: 1rem;
+//   }
+// }
 
 // footer
 #main-footer {
