@@ -210,9 +210,6 @@ i.fa-caret-down {
     grid-template-areas: "name subject" "email phone" "message message";
     grid-gap: 1.2rem;
     margin-bottom: 1.2rem; }
-    .contact-a .text-fields ::placeholder {
-      color: #333;
-      font-family: "Special Elite", sans-serif; }
     .contact-a .text-fields .name-input {
       grid-area: name;
       height: 2rem; }
@@ -234,6 +231,9 @@ i.fa-caret-down {
       border: solid 2px #ffbc00;
       font-family: "Special Elite", sans-serif;
       font-size: 1.1rem; }
+    .contact-a .text-fields ::placeholder {
+      color: #333;
+      font-family: "Special Elite", sans-serif; }
   .contact-a button[type="submit"] {
     font-family: "Special Elite", sans-serif;
     font-size: 1.1rem; }
@@ -289,11 +289,21 @@ i.fa-caret-down {
       width: 100%; }
   #process-a .process-items {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 3rem;
-    padding: 2rem 4rem; }
-    #process-a .process-items h1 {
-      padding-bottom: 1rem; }
+    grid-gap: 2rem;
+    padding: 0 4rem;
+    grid-template-areas: "one two" "three four" "five six"; }
+  #process-a .process-item-1 {
+    grid-area: one; }
+  #process-a .process-item-2 {
+    grid-area: two; }
+  #process-a .process-item-3 {
+    grid-area: three; }
+  #process-a .process-item-4 {
+    grid-area: four; }
+  #process-a .process-item-5 {
+    grid-area: five; }
+  #process-a .process-item-6 {
+    grid-area: six; }
 
 #main-footer {
   background: #333;
@@ -316,14 +326,10 @@ i.fa-caret-down {
 @media (max-height: 500px) and (max-width: 670px) {
   #home-video .grid-container {
     grid-template-columns: 1fr; }
-  #process-a {
-    background: #f4f4f4; }
-    #process-a .banner {
-      display: none; }
-    #process-a .process-items {
-      grid-template-columns: 1fr; }
-      #process-a .process-items .item {
-        display: none; }
+  #process-a .banner {
+    display: none; }
+  #process-a .process-items {
+    grid-template-areas: "one" "two" "four" "three" "five" "six"; }
   #show-a .banner {
     padding: 0 2rem; }
   #show-b .packages {
@@ -421,15 +427,12 @@ i.fa-caret-down {
     padding: 0; }
   #process-a .banner {
     padding: 0; }
-  #process-a .extra-space {
-    display: none; }
   #process-a .process-items {
-    grid-template-columns: 1fr;
+    display: grid;
+    grid-template-areas: "one" "two" "four" "three" "five" "six";
     grid-gap: 1rem;
     padding: 0; }
     #process-a .process-items p {
       font-size: 1.2rem; }
-    #process-a .process-items img {
-      display: none; }
   .contact-a .text-fields {
     grid-template-areas: "name" "subject" "email" "phone" "message"; } }
