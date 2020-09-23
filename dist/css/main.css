@@ -41,9 +41,6 @@ a .arrow-down {
   position: absolute;
   top: 35rem; }
 
-.text-center {
-  text-align: center; }
-
 .py-1 {
   padding: 1rem 0; }
 
@@ -67,6 +64,18 @@ a .arrow-down {
 
 .my-4 {
   margin: 4rem 0; }
+
+.mx-1 {
+  margin: 0 1rem; }
+
+.mx-2 {
+  margin: 0 2rem; }
+
+.mx-3 {
+  margin: 0 3rem; }
+
+.mx-4 {
+  margin: 0 4rem; }
 
 .section-title {
   font-size: 2rem;
